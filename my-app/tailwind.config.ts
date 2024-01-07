@@ -12,6 +12,9 @@ const config: Config = {
       gridTemplateColumns: {
         app: "250px 1fr",
       },
+      width: {
+        card: "600px",
+      },
     },
   },
   plugins: [],
