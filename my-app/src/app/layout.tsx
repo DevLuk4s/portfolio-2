@@ -18,9 +18,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body className={inter.className}>
-        <div className="grid grid-cols-app min-h-screen bg-black">
+        <div className="grid grid-cols-app min-h-screen">
           <Sidebar />
-          <main className="py-12 px-8">{children}</main>
+          <main>{children}</main>
         </div>
       </body>
     </html>

@@ -4,13 +4,13 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <aside className="py-8 px-4">
+    <aside className="flex flex-col gap-5 p-12 bg-neutral-950 border-r-2 border-neutral-700">
       <div>
         <Image className="w-28 rounded-full" src={eu} alt="eu" />
-        <h2 className="text-white">Lucas Gabriel</h2>
+        <h2 className="text-white text-xl font-semibold">Lucas Gabriel</h2>
       </div>
       <nav>
-        <ul>
+        <ul className="flex flex-col gap-5">
           <li>
             <Link className="text-white" href="/">
               Inicio
