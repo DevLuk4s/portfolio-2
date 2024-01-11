@@ -1,6 +1,9 @@
 import Link from "next/link";
-import eu from "../assets/images/slug/eu.jpeg";
+import eu from "@/app/assets/images/slug/eu.jpeg";
 import Image from "next/image";
+
+//Icons animated
+import home from "@/app/assets/icons/home.json";
 
 export default function Sidebar() {
   return (
@@ -17,17 +20,17 @@ export default function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link className="text-white" href="About">
+            <Link className="text-white" href="components/About">
               Sobre
             </Link>
           </li>
           <li>
-            <Link className="text-white" href="Project">
+            <Link className="text-white" href="components/About">
               Projeto
             </Link>
           </li>
           <li>
-            <Link className="text-white" href="Contact">
+            <Link className="text-white" href="components/About">
               Contato
             </Link>
           </li>
