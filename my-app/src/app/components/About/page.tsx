@@ -1,7 +1,11 @@
-export default function About() {
+import Skills from "./Skills";
+import About from "./About";
+
+export default function AboutPage() {
   return (
-    <>
-      <h1 className="text-white">About</h1>
-    </>
+    <section className="flex flex-col gap-10 bg-neutral-950 p-12 min-h-screen">
+      <About />
+      <Skills />
+    </section>
   );
 }

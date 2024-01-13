@@ -10,18 +10,12 @@ import css from "@/app/assets/images/skills/css.svg";
 import javascript from "@/app/assets/images/skills/javascript.svg";
 import react from "@/app/assets/images/skills/react.svg";
 
-export default function Project() {
+export default function ProjectRecents() {
   return (
-    <section className="flex flex-col gap-10 bg-neutral-950 p-12 min-h-screen">
-      <div>
-        <h1 className="text-white text-4xl font-bold">
-          Trabalho, hobby & open source
-        </h1>
-        <p className="text-white">
-          Sou fanático pela criação de novos projetos, pois é a maior chave para
-          ganhar conhecimento. Nesta página você pode navegar para 2 aplicações
-          na qual desenvolvi.
-        </p>
+    <div className="flex flex-col gap-10">
+      <div className="flex justify-between">
+        <h2 className="text-white text-xl font-semibold">Projetos recentes</h2>
+        <p className="text-white">Ver todos</p>
       </div>
       <div className="grid grid-cols-2 gap-10">
         <div className="flex flex-col gap-5 p-5 bg-neutral-900 border-2 border-neutral-700 rounded-xl">
@@ -53,6 +47,6 @@ export default function Project() {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   );
 }

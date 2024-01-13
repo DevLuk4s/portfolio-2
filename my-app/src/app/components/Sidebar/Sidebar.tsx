@@ -7,7 +7,7 @@ import home from "@/app/assets/icons/home.json";
 
 export default function Sidebar() {
   return (
-    <aside className="flex flex-col gap-5 p-12 bg-neutral-950 border-r-2 border-neutral-700">
+    <aside className="flex flex-col gap-5 p-12 bg-neutral-950">
       <div>
         <Image className="w-28 rounded-full" src={eu} alt="eu" />
         <h2 className="text-white text-xl font-semibold">Lucas Gabriel</h2>
@@ -25,12 +25,12 @@ export default function Sidebar() {
             </Link>
           </li>
           <li>
-            <Link className="text-white" href="components/About">
+            <Link className="text-white" href="components/Project">
               Projeto
             </Link>
           </li>
           <li>
-            <Link className="text-white" href="components/About">
+            <Link className="text-white" href="components/Contact">
               Contato
             </Link>
           </li>
