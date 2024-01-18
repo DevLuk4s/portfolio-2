@@ -1,9 +1,6 @@
-import Link from "next/link";
 import eu from "@/app/assets/images/slug/eu.jpeg";
 import Image from "next/image";
-
-//Icons animated
-import home from "@/app/assets/icons/home.json";
+import MainNavigation from ".";
 
 export default function Sidebar() {
   return (
@@ -12,30 +9,7 @@ export default function Sidebar() {
         <Image className="w-28 rounded-full" src={eu} alt="eu" />
         <h2 className="text-white text-xl font-semibold">Lucas Gabriel</h2>
       </div>
-      <nav>
-        <ul className="flex flex-col gap-5">
-          <li>
-            <Link className="text-white" href="/">
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link className="text-white" href="components/About">
-              Sobre
-            </Link>
-          </li>
-          <li>
-            <Link className="text-white" href="components/Project">
-              Projeto
-            </Link>
-          </li>
-          <li>
-            <Link className="text-white" href="components/Contact">
-              Contato
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <MainNavigation />
     </aside>
   );
 }
