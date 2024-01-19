@@ -15,7 +15,12 @@ export default function ProjectRecents() {
     <div className="flex flex-col gap-10">
       <div className="flex justify-between">
         <h2 className="text-white text-xl font-semibold">Projetos recentes</h2>
-        <p className="text-white">Ver todos</p>
+        <a
+          href="components/Project"
+          className="text-white hover:text-violet-500"
+        >
+          Ver todos
+        </a>
       </div>
       <div className="grid grid-cols-2 gap-10">
         <div className="flex flex-col gap-5 p-5 bg-neutral-900 border-2 border-neutral-700 rounded-xl">
