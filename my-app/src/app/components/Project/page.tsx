@@ -13,7 +13,7 @@ import react from "@/app/assets/images/skills/react.svg";
 
 export default function Project() {
   return (
-    <section className="flex flex-col gap-10 bg-neutral-950 p-12 min-h-screen">
+    <section className="flex flex-col gap-10 p-12 min-h-screen">
       <div>
         <h1 className="text-white text-4xl font-bold">
           Trabalho, hobby & open source
