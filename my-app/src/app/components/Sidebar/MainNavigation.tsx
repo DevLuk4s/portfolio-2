@@ -10,7 +10,7 @@ export default function MainNavigation() {
       <Navitem
         tittle="Certificado"
         icons={GraduationCap}
-        router="components/Certificado"
+        router="Certificado"
       />
       <Navitem tittle="Contact" icons={User} router="components/Contact" />
     </nav>
