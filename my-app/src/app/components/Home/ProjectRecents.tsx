@@ -22,7 +22,7 @@ export default function ProjectRecents() {
           Ver todos
         </a>
       </div>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
         <div className="flex flex-col gap-5 p-5 bg-neutral-900 border-2 border-neutral-700 rounded-xl">
           <Image src={projetoOne} alt="projetos recentes" />
           <h2 className="text-white text-xl font-semibold">

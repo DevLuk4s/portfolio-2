@@ -5,7 +5,7 @@ import Image from "next/image";
 import projetoOne from "@/app/assets/images/project/shop-cart.png";
 import projetoTwo from "@/app/assets/images/project/jogo-da-memoria.png";
 import projetoThree from "@/app/assets/images/project/calculadora.jpeg";
-import projetoFour from "@/app/assets/images/project/fitnes.jpeg";
+import projetoFour from "@/app/assets/images/project/fitnes.png";
 import projetoSix from "@/app/assets/images/project/rick-morty.png";
 import projetoSeven from "@/app/assets/images/project/timer-react.jpeg";
 import projetoEight from "@/app/assets/images/project/mosquito.jpeg";
@@ -33,7 +33,7 @@ export default function Project() {
           na qual desenvolvi.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-10">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
         <div className="flex flex-col gap-5 p-5 bg-neutral-900 border-2 border-neutral-700 rounded-xl">
           <Image src={projetoOne} alt="projetos recentes" />
           <h2 className="text-white text-xl font-semibold">
