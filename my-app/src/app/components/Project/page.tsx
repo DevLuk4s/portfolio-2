@@ -1,5 +1,9 @@
 // Next
+"use client";
 import Image from "next/image";
+
+// Motion Framer
+import { motion } from "framer-motion";
 
 // Project
 import projetoOne from "@/app/assets/images/project/shop-cart.png";
@@ -22,7 +26,12 @@ import vite from "@/app/assets/images/skills/vite.svg";
 
 export default function Project() {
   return (
-    <section className="flex flex-col gap-10 p-12 min-h-screen">
+    <motion.section
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="flex flex-col gap-10 p-12 min-h-screen"
+    >
       <div>
         <h1 className="text-white text-4xl font-bold">
           Trabalho, hobby & open source
@@ -131,6 +140,6 @@ export default function Project() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
