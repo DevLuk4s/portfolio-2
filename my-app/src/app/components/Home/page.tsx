@@ -1,4 +1,6 @@
 "use client";
+
+// Componentsw
 import AboutHome from "./AboutHome";
 import ContactHome from "./ContactHome";
 import ProjectRecents from "./ProjectRecents";

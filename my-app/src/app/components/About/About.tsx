@@ -1,3 +1,5 @@
+import Button from "@/app/utilities/Button";
+
 export default function About() {
   return (
     <div className="flex flex-col gap-5">
@@ -19,9 +21,7 @@ export default function About() {
         mercado, demonstrando um comprometimento em fazer a diferença em todos
         os projetos nos quais estou envolvido.
       </p>
-      <button className="text-black bg-white w-36 h-10 rounded-full">
-        Dawload CV
-      </button>
+      <Button />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import Image from "next/image";
 
 // Ilustrações
 import catSpace from "@/app/assets/images/slug/catSpace.svg";
+import Button from "@/app/utilities/Button";
 
 export default function ContactHome() {
   return (
@@ -15,9 +16,7 @@ export default function ContactHome() {
           sobre este website, estou aberto a trocar ideias e discutir qualquer
           aspecto que possa ser relevante.
         </p>
-        <button className="bg-white font-medium w-36 h-10 rounded-2xl">
-          Contact me
-        </button>
+        <Button />
       </div>
       <div>
         <Image src={catSpace} alt="gato espacial" />
