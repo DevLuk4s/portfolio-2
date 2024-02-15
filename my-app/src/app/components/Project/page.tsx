@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 // Data
 import projetos from "@/app/data/projetos";
+import { ExternalLink, Github } from "lucide-react";
 
 export default function Project() {
   return (
@@ -28,16 +29,14 @@ export default function Project() {
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
         {projetos.map((projeto) => (
-          <Link
+          <div
             key={projeto.id}
-            href={`/components/AboutProject/${projeto.id}`}
+            className="flex flex-col gap-5 p-5 bg-neutral-900 border-2 border-neutral-700 rounded-xl"
           >
-            <div className="flex flex-col gap-5 p-5 bg-neutral-900 border-2 border-neutral-700 rounded-xl">
-              <Image src={projeto.imagem} alt={projeto.nome} />
-              <h2 className="text-white text-xl font-semibold">
-                {projeto.nome}
-              </h2>
-              <p className="text-white">{projeto.descricao}</p>
+            <Image src={projeto.imagem} alt={projeto.nome} />
+            <h2 className="text-white text-xl font-semibold">{projeto.nome}</h2>
+            <p className="text-white">{projeto.descricao}</p>
+            <div className="flex justify-between">
               <div className="flex gap-5">
                 {projeto.tecnologias.map((tecnologia, index) => (
                   <Image
@@ -48,8 +47,16 @@ export default function Project() {
                   />
                 ))}
               </div>
+              <div className="flex gap-5">
+                <a href={projeto.url} target="_blank">
+                  <ExternalLink className="w-5 h-5 text-white" />
+                </a>
+                <a href={projeto.github} target="_blank">
+                  <Github className="w-5 h-5 text-white" />
+                </a>
+              </div>
             </div>
-          </Link>
+          </div>
         ))}
       </div>
     </motion.section>

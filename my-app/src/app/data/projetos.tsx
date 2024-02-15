@@ -25,6 +25,8 @@ const projetos = [
     descricao:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, perferendis?",
     tecnologias: [nextjs, tailwindcss, typescript, javascript],
+    url: "https://challenge-rick-morty.vercel.app/",
+    github: "https://github.com/DevLuk4s/challenge-rick-morty",
   },
   {
     id: 2,
