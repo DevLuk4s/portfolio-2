@@ -1,4 +1,4 @@
-import eu from "@/app/assets/images/slug/eu.jpeg";
+import eu from "@/pages/assets/images/slug/eu.jpeg";
 import Image from "next/image";
 
 export default function Logo() {

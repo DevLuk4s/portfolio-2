@@ -1,8 +1,8 @@
 import Image from "next/image";
 
 // Ilustrações
-import catSpace from "@/app/assets/images/slug/catSpace.svg";
-import Button from "@/app/utilities/Button";
+import catSpace from "@/pages/assets/images/slug/catSpace.svg";
+import Button from "@/pages/utilities/Button";
 
 export default function ContactHome() {
   return (

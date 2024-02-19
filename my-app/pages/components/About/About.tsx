@@ -1,4 +1,4 @@
-import Button from "@/app/utilities/Button";
+import Button from "@/pages/utilities/Button";
 
 export default function About() {
   return (

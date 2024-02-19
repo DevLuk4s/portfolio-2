@@ -1,33 +1,22 @@
-"use client";
-import Link from "next/link";
 import Image from "next/image";
 
-// Framer Motion
-import { motion } from "framer-motion";
-
-// Data
-import projetos from "@/app/data/projetos";
+// Project
+import projetos from "@/pages/data/projetosRecentes";
 import { ExternalLink, Github } from "lucide-react";
 
-export default function Project() {
+export default function ProjectRecents() {
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="flex flex-col gap-10 p-12 min-h-screen"
-    >
-      <div>
-        <h1 className="text-white text-4xl font-bold">
-          Trabalho, hobby & open source
-        </h1>
-        <p className="text-white">
-          Sou fanático pela criação de novos projetos, pois é a maior chave para
-          ganhar conhecimento. Nesta página você pode navegar para 2 aplicações
-          na qual desenvolvi.
-        </p>
+    <div className="flex flex-col gap-10">
+      <div className="flex justify-between">
+        <h2 className="text-white text-xl font-semibold">Projetos recentes</h2>
+        <a
+          href="components/Project"
+          className="text-white hover:text-violet-500"
+        >
+          Ver todos
+        </a>
       </div>
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
+      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
         {projetos.map((projeto) => (
           <div
             key={projeto.id}
@@ -59,6 +48,6 @@ export default function Project() {
           </div>
         ))}
       </div>
-    </motion.section>
+    </div>
   );
 }
