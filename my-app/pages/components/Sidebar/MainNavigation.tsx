@@ -1,4 +1,7 @@
+// Icons
 import { Gamepad, GraduationCap, Home, Info, User } from "lucide-react";
+
+// Components
 import Navitem from "./Navitem";
 
 export default function MainNavigation() {

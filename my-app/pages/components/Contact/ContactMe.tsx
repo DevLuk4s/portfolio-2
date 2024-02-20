@@ -1,3 +1,4 @@
+// Icons
 import { Github, Instagram, Linkedin } from "lucide-react";
 
 export default function ContactMe() {

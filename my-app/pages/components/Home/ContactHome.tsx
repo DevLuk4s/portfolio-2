@@ -1,3 +1,4 @@
+// Nextjs
 import Image from "next/image";
 
 // Ilustrações
@@ -16,7 +17,6 @@ export default function ContactHome() {
           sobre este website, estou aberto a trocar ideias e discutir qualquer
           aspecto que possa ser relevante.
         </p>
-        <Button />
       </div>
       <div>
         <Image src={catSpace} alt="gato espacial" />

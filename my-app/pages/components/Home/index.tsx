@@ -1,6 +1,7 @@
+// Nextjs
 "use client";
 
-// Componentsw
+// Components
 import AboutHome from "./AboutHome";
 import ContactHome from "./ContactHome";
 import ProjectRecents from "./ProjectRecents";

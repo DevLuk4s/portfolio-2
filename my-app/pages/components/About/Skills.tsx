@@ -1,9 +1,8 @@
-// Next
+// Nextjs
 "use client";
 import Image from "next/image";
 
 // Skills
-
 import html from "@/pages/assets/images/skills/html.svg";
 import css from "@/pages/assets/images/skills/css.svg";
 import javascript from "@/pages/assets/images/skills/javascript.svg";

@@ -1,4 +1,7 @@
+// Nextjs
 "use client";
+
+// Components
 import Skills from "./Skills";
 import About from "./About";
 

@@ -1,5 +1,3 @@
-import Button from "@/pages/utilities/Button";
-
 export default function About() {
   return (
     <div className="flex flex-col gap-5">
@@ -21,7 +19,6 @@ export default function About() {
         mercado, demonstrando um comprometimento em fazer a diferença em todos
         os projetos nos quais estou envolvido.
       </p>
-      <Button />
     </div>
   );
 }

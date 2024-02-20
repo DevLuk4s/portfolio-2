@@ -1,7 +1,10 @@
+// Nextjs
 import Image from "next/image";
 
 // Project
 import projetos from "@/pages/data/projetosRecentes";
+
+// Icons
 import { ExternalLink, Github } from "lucide-react";
 
 export default function ProjectRecents() {

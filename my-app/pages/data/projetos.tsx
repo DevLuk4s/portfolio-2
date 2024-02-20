@@ -25,7 +25,7 @@ const projetos = [
     descricao:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, perferendis?",
     tecnologias: [nextjs, tailwindcss, typescript, javascript],
-    url: "https://challenge-rick-morty.vercel.pages/",
+    url: "https://challenge-rick-morty.vercel.app/",
     github: "https://github.com/DevLuk4s/challenge-rick-morty",
   },
   {
@@ -35,8 +35,8 @@ const projetos = [
     descricao:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, perferendis?",
     tecnologias: [react, css, html],
-    url: "https://challenge-rick-morty.vercel.pages/",
-    github: "https://github.com/DevLuk4s/challenge-rick-morty",
+    url: "https://challenge-shopping-cart.vercel.app/",
+    github: "https://github.com/DevLuk4s/challenge-shopping-cart",
   },
   {
     id: 3,
@@ -45,8 +45,8 @@ const projetos = [
     descricao:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, perferendis?",
     tecnologias: [vite, react, css, html],
-    url: "https://challenge-rick-morty.vercel.pages/",
-    github: "https://github.com/DevLuk4s/challenge-rick-morty",
+    url: "https://calculadora-react-ten-alpha.vercel.app/",
+    github: "https://github.com/DevLuk4s/calculadora-react?tab=readme-ov-file",
   },
   {
     id: 3,
@@ -55,8 +55,8 @@ const projetos = [
     descricao:
       "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis, perferendis?",
     tecnologias: [vite, react, css, html],
-    url: "https://challenge-rick-morty.vercel.pages/",
-    github: "https://github.com/DevLuk4s/challenge-rick-morty",
+    url: "https://timer-react-pink.vercel.app/",
+    github: "https://github.com/DevLuk4s/timer-react",
   },
 ];
 

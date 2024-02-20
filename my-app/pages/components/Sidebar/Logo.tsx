@@ -1,5 +1,8 @@
-import eu from "@/pages/assets/images/slug/eu.jpeg";
+// NextJs
 import Image from "next/image";
+
+// Image
+import eu from "@/pages/assets/images/slug/eu.jpeg";
 
 export default function Logo() {
   return (

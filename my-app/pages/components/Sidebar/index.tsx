@@ -1,3 +1,4 @@
+// Components
 import Logo from "./Logo";
 import MainNavigation from "./MainNavigation";
 
