@@ -6,9 +6,13 @@ export default function Document() {
     <Html lang="pt-br">
       <Head />
       <body className="grid grid-cols-app min-h-screen bg-neutral-950">
-        <Sidebar />
-        <Main />
-        <NextScript />
+        <header>
+          <Sidebar />
+        </header>
+        <main>
+          <Main />
+          <NextScript />
+        </main>
       </body>
     </Html>
   );

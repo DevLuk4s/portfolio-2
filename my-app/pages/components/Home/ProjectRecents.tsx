@@ -41,10 +41,10 @@ export default function ProjectRecents() {
               </div>
               <div className="flex gap-5">
                 <a href={projeto.url} target="_blank">
-                  <ExternalLink className="w-5 h-5 text-white" />
+                  <ExternalLink className="w-5 h-5 text-white hover:text-violet-500" />
                 </a>
                 <a href={projeto.github} target="_blank">
-                  <Github className="w-5 h-5 text-white" />
+                  <Github className="w-5 h-5 text-white hover:text-violet-500" />
                 </a>
               </div>
             </div>
