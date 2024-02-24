@@ -1,19 +1,31 @@
 // Next
 "use client";
 
+// React
+import { useState } from "react";
+
 // Components
 import ContactMe from "./ContactMe";
 
 // Motion Framer
 import { motion } from "framer-motion";
 
-export default function contato() {
+export default function Contato() {
+  const [name, setName] = useState("");
+  const [mensagem, setmensagem] = useState("");
+  const [email, setemail] = useState("");
+
+  const sendEmail = () => {
+    alert("Ola Mundo");
+  };
+
   return (
-    <motion.section
+    <motion.form
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       className="flex flex-col gap-5 p-12"
+      onSubmit={sendEmail}
     >
       <h1 className="text-white text-4xl font-bold">Contato</h1>
       <p className="text-white">
@@ -31,20 +43,26 @@ export default function contato() {
         className="text-white bg-neutral-900 rounded-xl outline-none p-4 border-2 border-neutral-700"
         type="text"
         placeholder="Lucas Gabriel"
+        value={name}
       />
       <p className="text-white">E-mail</p>
       <input
         className="text-white bg-neutral-900 rounded-xl outline-none p-4 border-2 border-neutral-700"
         type="text"
         placeholder="lucasgabrielferreirasilva777@gmail.com"
+        value={email}
       />
       <p className="text-white">Mensagem</p>
-      <input
-        className="text-white bg-neutral-900 rounded-xl outline-none p-4 border-2 border-neutral-700"
-        type="text"
-        placeholder="Como posso ajudar?"
-      />
+      <textarea
+        className="text-white bg-neutral-900 outline-none rounded-xl p-4 border-2 border-neutral-700"
+        placeholder="Mensagem"
+        value={mensagem}
+        onChange={(e) => setName()}
+        name="Mensagem"
+        cols="30"
+        rows="10"
+      ></textarea>
       <button className="text-black bg-white p-2 rounded-xl">Enviar</button>
-    </motion.section>
+    </motion.form>
   );
 }

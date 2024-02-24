@@ -5,7 +5,7 @@ import Image from "next/image";
 import projetos from "@/pages/data/projetosRecentes";
 
 // Icons
-import { ExternalLink, Github } from "lucide-react";
+import { ChevronRight, ExternalLink, Github } from "lucide-react";
 
 export default function ProjectRecents() {
   return (
@@ -14,9 +14,10 @@ export default function ProjectRecents() {
         <h2 className="text-white text-xl font-semibold">Projetos recentes</h2>
         <a
           href="components/Project"
-          className="text-white hover:text-violet-500"
+          className="group flex justify-between items-center text-white hover:text-violet-500"
         >
           Ver todos
+          <ChevronRight className="w-5 h-5 group-hover:mr-5 transition-all" />
         </a>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
