@@ -1,5 +1,6 @@
 // Nextjs
 import Image from "next/image";
+import Link from "next/link";
 
 // Project
 import projetos from "@/pages/data/projetosRecentes";
@@ -12,13 +13,13 @@ export default function ProjectRecents() {
     <div className="flex flex-col gap-10">
       <div className="flex justify-between">
         <h2 className="text-white text-xl font-semibold">Projetos recentes</h2>
-        <a
+        <Link
           href="components/Project"
           className="group flex justify-between items-center text-white hover:text-violet-500"
         >
           Ver todos
           <ChevronRight className="w-5 h-5 group-hover:mr-5 transition-all" />
-        </a>
+        </Link>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
         {projetos.map((projeto) => (
@@ -41,9 +42,9 @@ export default function ProjectRecents() {
                 ))}
               </div>
               <div className="flex gap-5">
-                <a href={projeto.url} target="_blank">
+                <Link href={projeto.url} target="_blank">
                   <ExternalLink className="w-5 h-5 text-white hover:text-violet-500 transition duration-200" />
-                </a>
+                </Link>
                 <a href={projeto.github} target="_blank">
                   <Github className="w-5 h-5 text-white hover:text-violet-500 transition duration-200" />
                 </a>
