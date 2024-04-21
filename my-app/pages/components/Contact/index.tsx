@@ -57,10 +57,10 @@ export default function Contato() {
         className="text-white bg-neutral-900 outline-none rounded-xl p-4 border-2 border-neutral-700"
         placeholder="Mensagem"
         value={mensagem}
-        onChange={(e) => setName()}
+        onChange={(e) => sendEmail()}
         name="Mensagem"
-        cols="30"
-        rows="10"
+        cols={30 as number} // Definindo explicitamente o tipo como number
+        rows={10 as number} // Definindo explicitamente o tipo como number
       ></textarea>
       <button className="text-black bg-white p-2 rounded-xl">Enviar</button>
     </motion.form>
