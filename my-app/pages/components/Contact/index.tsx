@@ -16,7 +16,10 @@ export default function Contato() {
   const [email, setEmail] = useState<string>("");
 
   const sendWhatsAppMessage = () => {
-    const mensagemNoWhats = `Nome: ${name}%0AEmail: ${email}%0AMensagem: ${mensagem}`;
+    const mensagemNoWhats = `Nome: ${name}%0AEmail: ${email}%0AMensagem: ${mensagem.replace(
+      /\n/g,
+      "%0A"
+    )}`;
     window.open(
       `https://wa.me/5571984078620/?text=${mensagemNoWhats}`,
       "_blank"
@@ -27,6 +30,10 @@ export default function Contato() {
     event.preventDefault();
     if (!name || !email || !mensagem) {
       alert("Por favor, preencha todos os campos.");
+      return;
+    }
+    if (!/\S+@\S+\.\S+/.test(email)) {
+      alert("Por favor, insira um email válido.");
       return;
     }
     sendWhatsAppMessage();
@@ -45,7 +52,9 @@ export default function Contato() {
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta,
         placeat!
       </p>
-      <h2 className="text-white text-2xl font-semibold">Minhas Redes Social</h2>
+      <h2 className="text-white text-2xl font-semibold">
+        Minhas Redes Sociais
+      </h2>
       <ContactMe />
       <h2 className="text-white text-2xl font-semibold">Mande um E-mail</h2>
       <p className="text-white">
@@ -61,6 +70,7 @@ export default function Contato() {
         placeholder="Lucas Gabriel"
         value={name}
         onChange={(e) => setName(e.target.value)}
+        required
       />
       <label htmlFor="email" className="text-white">
         E-mail
@@ -68,10 +78,11 @@ export default function Contato() {
       <input
         id="email"
         className="text-white bg-neutral-900 rounded-xl outline-none p-4 border-2 border-neutral-700"
-        type="text"
+        type="email"
         placeholder="lucasgabrielferreirasilva777@gmail.com"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
+        required
       />
       <label htmlFor="mensagem" className="text-white">
         Mensagem
@@ -85,6 +96,7 @@ export default function Contato() {
         name="Mensagem"
         cols={30 as number} // Definindo explicitamente o tipo como number
         rows={10 as number} // Definindo explicitamente o tipo como number
+        required
       ></textarea>
       <button type="submit" className="text-black bg-white p-2 rounded-xl">
         Enviar
