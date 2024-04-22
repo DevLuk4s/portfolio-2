@@ -12,7 +12,7 @@ import tailwindcss from "@/pages/assets/images/skills/tailwindcss.svg";
 import typescript from "@/pages/assets/images/skills/typescript.svg";
 import vite from "@/pages/assets/images/skills/vite.svg";
 
-const projetos = [
+const projetosRecentes = [
   {
     id: 1,
     nome: "Challenge Rick Morty",
@@ -35,4 +35,4 @@ const projetos = [
   },
 ];
 
-export default projetos;
+export default projetosRecentes;

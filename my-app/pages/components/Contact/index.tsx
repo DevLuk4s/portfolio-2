@@ -90,7 +90,7 @@ export default function Contato() {
       <textarea
         id="mensagem"
         className="text-white bg-neutral-900 outline-none rounded-xl p-4 border-2 border-neutral-700"
-        placeholder="Mensagem"
+        placeholder="Assuntos"
         value={mensagem}
         onChange={(e) => setMensagem(e.target.value)}
         name="Mensagem"
