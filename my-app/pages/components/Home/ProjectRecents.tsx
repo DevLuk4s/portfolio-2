@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Project
-import projetos from "@/pages/data/projetosRecentes";
+import projetosRecentes from "@/pages/data/projetosRecentes";
 
 // Icons
 import { ChevronRight, ExternalLink, Github } from "lucide-react";
@@ -22,7 +22,7 @@ export default function ProjectRecents() {
         </Link>
       </div>
       <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
-        {projetos.map((projeto) => (
+        {projetosRecentes.map((projeto) => (
           <div
             key={projeto.id}
             className="flex flex-col gap-5 p-5 bg-neutral-900 border-2 border-neutral-700 rounded-xl"
