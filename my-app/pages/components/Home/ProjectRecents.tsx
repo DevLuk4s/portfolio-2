@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 // Project
-import projetosRecentes from "@/pages/data/projetosRecentes";
+import projetosRecentes from "@/data/projetosRecentes";
 
 // Icons
 import { ChevronRight, ExternalLink, Github } from "lucide-react";

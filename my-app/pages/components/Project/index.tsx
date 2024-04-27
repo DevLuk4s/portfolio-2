@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 // Data
-import projetos from "@/pages/data/projetos";
+import projetos from "@/data/projetos";
 
 // Icons
 import { ExternalLink, Github } from "lucide-react";

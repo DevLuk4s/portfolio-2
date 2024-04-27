@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 
 // Data
-import projetos from "@/pages/data/projetos";
+import projetos from "@/data/projetos";
 
 export default function IdProject() {
   const router = useRouter();
