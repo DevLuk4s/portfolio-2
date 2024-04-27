@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 // Components
-import Sidebar from "./components/Sidebar/page";
+import Sidebar from "./components/Sidebar/index";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,12 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="pt-br">
-      <body className={inter.className}>
-        <div className="grid grid-cols-app min-h-screen bg-neutral-950">
+    <html lang="pt-br" className={inter.className}>
+      <body className="grid grid-cols-app min-h-screen bg-neutral-950">
+        <header>
           <Sidebar />
-          <main>{children}</main>
-        </div>
+        </header>
+        <main>{children}</main>
       </body>
     </html>
   );

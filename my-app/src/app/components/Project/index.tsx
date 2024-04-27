@@ -1,5 +1,5 @@
+// Nextjs
 "use client";
-import Link from "next/link";
 import Image from "next/image";
 
 // Framer Motion
@@ -7,6 +7,8 @@ import { motion } from "framer-motion";
 
 // Data
 import projetos from "@/app/data/projetos";
+
+// Icons
 import { ExternalLink, Github } from "lucide-react";
 
 export default function Project() {
@@ -49,10 +51,10 @@ export default function Project() {
               </div>
               <div className="flex gap-5">
                 <a href={projeto.url} target="_blank">
-                  <ExternalLink className="w-5 h-5 text-white" />
+                  <ExternalLink className="w-5 h-5 text-white hover:text-violet-500 transition duration-200" />
                 </a>
                 <a href={projeto.github} target="_blank">
-                  <Github className="w-5 h-5 text-white" />
+                  <Github className="w-5 h-5 text-white hover:text-violet-500 transition duration-200" />
                 </a>
               </div>
             </div>

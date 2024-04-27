@@ -1,5 +1,3 @@
-import Button from "@/app/utilities/Button";
-
 export default function About() {
   return (
     <div className="flex flex-col gap-5">
@@ -21,7 +19,14 @@ export default function About() {
         mercado, demonstrando um comprometimento em fazer a diferença em todos
         os projetos nos quais estou envolvido.
       </p>
-      <Button />
+      <a
+        href="/assets/curriculo/curriculo-lucasgabriel.pdf"
+        download="curriculo-lucasgabriel"
+        type="application/pdf"
+        className="flex justify-center items-center w-48 h-10 font-bold rounded-full bg-white"
+      >
+        Curriculo
+      </a>
     </div>
   );
 }

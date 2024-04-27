@@ -1,30 +1,29 @@
-// Next
+// Nextjs
 "use client";
 import Image from "next/image";
 
 // Skills
-
-import html from "@/app/assets/images/skills/html.svg";
-import css from "@/app/assets/images/skills/css.svg";
-import javascript from "@/app/assets/images/skills/javascript.svg";
-import react from "@/app/assets/images/skills/react.svg";
-import typescript from "@/app/assets/images/skills/typescript.svg";
-import nextjs from "@/app/assets/images/skills/nextjs.svg";
-import vite from "@/app/assets/images/skills/vite.svg";
-import tailwindcss from "@/app/assets/images/skills/tailwindcss.svg";
-import styledcomponents from "@/app/assets/images/skills/styled-components.svg";
-import sass from "@/app/assets/images/skills/sass.svg";
-import reactrouter from "@/app/assets/images/skills/react-router.svg";
-import figma from "@/app/assets/images/skills/figma.svg";
-import git from "@/app/assets/images/skills/git.svg";
-import openai from "@/app/assets/images/skills/openai.svg";
-import framer from "@/app/assets/images/skills/framer.svg";
-import jest from "@/app/assets/images/skills/jest.svg";
-import redux from "@/app/assets/images/skills/redux.svg";
-// import express from "@/app/assets/images/skills/express.svg";
-// import mongo from "@/app/assets/images/skills/mongo.svg";
-// import mysql from "@/app/assets/images/skills/mysql.svg";
-// import nodejs from "@/app/assets/images/skills/nodejs.svg";
+import html from "@/pages/assets/images/skills/html.svg";
+import css from "@/pages/assets/images/skills/css.svg";
+import javascript from "@/pages/assets/images/skills/javascript.svg";
+import react from "@/pages/assets/images/skills/react.svg";
+import typescript from "@/pages/assets/images/skills/typescript.svg";
+import nextjs from "@/pages/assets/images/skills/nextjs.svg";
+import vite from "@/pages/assets/images/skills/vite.svg";
+import tailwindcss from "@/pages/assets/images/skills/tailwindcss.svg";
+import styledcomponents from "@/pages/assets/images/skills/styled-components.svg";
+import sass from "@/pages/assets/images/skills/sass.svg";
+import reactrouter from "@/pages/assets/images/skills/react-router.svg";
+import figma from "@/pages/assets/images/skills/figma.svg";
+import git from "@/pages/assets/images/skills/git.svg";
+import openai from "@/pages/assets/images/skills/openai.svg";
+import framer from "@/pages/assets/images/skills/framer.svg";
+import jest from "@/pages/assets/images/skills/jest.svg";
+import redux from "@/pages/assets/images/skills/redux.svg";
+// import express from "@/pages/assets/images/skills/express.svg";
+// import mongo from "@/pages/assets/images/skills/mongo.svg";
+// import mysql from "@/pages/assets/images/skills/mysql.svg";
+// import nodejs from "@/pages/assets/images/skills/nodejs.svg";
 
 export default function Skills() {
   const skillsData = [

@@ -1,8 +1,9 @@
+// Nextjs
 import Image from "next/image";
+import Link from "next/link";
 
 // Ilustrações
 import catSpace from "@/app/assets/images/slug/catSpace.svg";
-import Button from "@/app/utilities/Button";
 
 export default function ContactHome() {
   return (
@@ -16,7 +17,12 @@ export default function ContactHome() {
           sobre este website, estou aberto a trocar ideias e discutir qualquer
           aspecto que possa ser relevante.
         </p>
-        <Button />
+        <Link
+          href="/components/Contact"
+          className="font-bold py-2 px-4 rounded-full bg-white"
+        >
+          Contato me
+        </Link>
       </div>
       <div>
         <Image src={catSpace} alt="gato espacial" />
