@@ -24,7 +24,7 @@ export default function ContactHome() {
           Contato me
         </Link>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Image src={catSpace} alt="gato espacial" />
       </div>
     </div>
