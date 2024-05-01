@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       gridTemplateColumns: {
         desktop: "200px 1fr",
-        mobile: "auto 1fr",
+        mobile: "50px 1fr",
       },
       width: {
         card: "600px",

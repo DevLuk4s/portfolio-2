@@ -4,6 +4,7 @@ import "./globals.css";
 
 // Components
 import Sidebar from "./components/Sidebar/page";
+import SidebarMob from "./components/Sidebar/SidebarMob";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={inter.className}>
       <body className="grid md:grid-cols-desktop grid-cols-mobile min-h-screen bg-neutral-950">
-        <div className="hidden md:block">
+        <div>
           <Sidebar />
         </div>
         <main>{children}</main>
