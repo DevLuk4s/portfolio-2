@@ -4,7 +4,6 @@ import "./globals.css";
 
 // Components
 import Sidebar from "./components/Sidebar/page";
-import SidebarMob from "./components/Sidebar/SidebarMob";
 
 const inter = Inter({ subsets: ["latin"] });
 

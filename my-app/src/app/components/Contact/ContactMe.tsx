@@ -22,7 +22,7 @@ export default function ContactMe() {
       </a>
       <a
         className="flex gap-2 text-gray-500 bg-neutral-900 border border-neutral-700 hover:text-violet-500 transition duration-200 rounded-xl px-4 py-2"
-        href="https://www.instagram.com/luk4s.gabriel/"
+        href="https://www.instagram.com/devluk4s/"
         target="_blank"
       >
         <Instagram className="w-5 h-5" />
