@@ -6,7 +6,7 @@ import Navitem from "./Navitem";
 
 export default function MainNavigation() {
   return (
-    <nav className="space-y-6">
+    <nav className="space-y-6 hidden md:block">
       <Navitem tittle="Home" icons={Home} router="/" />
       <Navitem tittle="About" icons={Info} router="/components/About" />
       <Navitem tittle="Projeto" icons={Gamepad} router="/components/Project" />

@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br" className={inter.className}>
       <body className="grid grid-cols-app min-h-screen bg-neutral-950">
-        <div>
+        <div className="">
           <Sidebar />
         </div>
         <main>{children}</main>

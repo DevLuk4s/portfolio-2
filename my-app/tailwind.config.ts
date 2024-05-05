@@ -10,7 +10,7 @@ const config: Config = {
     // darkMode: "class",
     extend: {
       gridTemplateColumns: {
-        app: "250px 1fr",
+        app: "1fr",
       },
       width: {
         card: "600px",
