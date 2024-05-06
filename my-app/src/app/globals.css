@@ -18,3 +18,12 @@
   background: #fff;
   margin-top: 5px;
 }
+
+@media (max-width: 768px) {
+  .SidebarMobile {
+    width: 100%;
+    height: 100vh;
+    background: black;
+    overflow: hidden;
+  }
+}
